@@ -1,3 +1,20 @@
+---
+title: Typecho对标obsidian美化
+author:
+  - 潇寒paper龙
+  - 潇寒子
+tags:
+  - typecho
+  - css
+  - blog
+  - markdown
+  - obsidian
+created: 2025-01-24
+modified: 2025-08-08
+draft: false
+description: Typecho对标obsidian美化
+---
+
 ## 启用数学公式渲染
 
 >笔者使用的笔记是Obsidian,所以被渲染的数学公式要以`$ $` 或`$$ $$` 包含

@@ -1,3 +1,18 @@
+---
+title: typecho 美化v0.1
+author:
+  - 潇寒paper龙
+  - 潇寒子
+tags:
+  - typecho
+  - css
+  - blog
+created: 2025-01-24
+modified: 2025-08-05
+draft: false
+description: typecho 美化v0.1
+---
+
 ```css
 /* ------------------------------------
  * Typecho Default Theme

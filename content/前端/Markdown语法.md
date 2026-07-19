@@ -1,13 +1,20 @@
 ---
 title: Markdown语法
+author:
+  - 潇寒paper龙
+  - 潇寒子
 aliases:
   - MD语法
   - Obsidian Markdown
   - Markdown教程
 tags:
-  - Markdown语法
+  - markdown
   - 标记语言
-  - Obsidian
+  - obsidian
+created: 2025-01-24
+modified: 2025-08-05
+draft: false
+description: Markdown基础
 ---
 
 **语法速查表**

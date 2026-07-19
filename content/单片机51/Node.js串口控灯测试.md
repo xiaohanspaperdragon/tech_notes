@@ -1,38 +1,56 @@
 ---
-title: Node.js���ڿصƲ���
+title: Node.js串口控灯测试
+author:
+  - 潇寒
+  - 潇寒paper龙
+tags:
+  - 单片机
+  - 51
+  - 虚拟串口
+created: 2026-7-05
+draft: false
 ---
+
 ## 硬件
 
 ```c
-#include <reg51.h>   // AT89C55头文�?
+#include <reg51.h>   // AT89C55头文件
+
 sbit LED = P1^0;     // LED接P1.0
 
-// ====== 串口初始�?(9600bps @ 11.0592MHz) ======
+// ====== 串口初始化 (9600bps @ 11.0592MHz) ======
 void UART_Init() {
-    TMOD = 0x20;      // 定时�?，模�? (8位自动重�?
-    TH1 = 0xFD;       // 9600波特�?    TL1 = 0xFD;
-    SCON = 0x50;      // 模式1 (8位UART)，允许接�?    TR1 = 1;          // 启动定时�?
+    TMOD = 0x20;      // 定时器1，模式2 (8位自动重装)
+    TH1 = 0xFD;       // 9600波特率
+    TL1 = 0xFD;
+    SCON = 0x50;      // 模式1 (8位UART)，允许接收
+    TR1 = 1;          // 启动定时器1
     ES = 1;           // 使能串口中断
-    EA = 1;           // 使能总中�?}
+    EA = 1;           // 使能总中断
+}
 
 // ====== 串口中断服务 ======
 void UART_ISR() interrupt 4 {
     unsigned char cmd;
     
-    if (RI) {                     // 接收到数�?        cmd = SBUF;               // 读取指令
+    if (RI) {                     // 接收到数据
+        cmd = SBUF;               // 读取指令
         RI = 0;                   // 清除接收标志
         
         if (cmd == 0x01) {
-            LED = 0;              // 开�?        } else if (cmd == 0x00) {
+            LED = 0;              // 开灯
+        } else if (cmd == 0x00) {
             LED = 1;              // 关灯
         }
         
-        // 可选：回传确认（调试用�?        SBUF = cmd;               // 回显
-        while(!TI);               // 等待发送完�?        TI = 0;
+        // 可选：回传确认（调试用）
+        SBUF = cmd;               // 回显
+        while(!TI);               // 等待发送完成
+        TI = 0;
     }
 }
 
-// ====== 主函�?======
+// ====== 主函数 ======
 void main() {
     LED = 1;          // 初始关灯
     UART_Init();
@@ -67,13 +85,14 @@ app.use(express.static('public'));
 
 // ====== 配置虚拟串口 ======
 
-// VSPD创建了一对：COM3 �?COM4
+// VSPD创建了一对：COM3 ↔ COM4
 
 // Node.js用COM3，Proteus用COM4
 
 const serialPort = new SerialPort({
 
-    path: 'COM3',        // 改成你VSPD创建的那个端�?
+    path: 'COM3',        // 改成你VSPD创建的那个端口
+
     baudRate: 9600,
 
     dataBits: 8,
@@ -88,7 +107,7 @@ const serialPort = new SerialPort({
 
 serialPort.on('open', () => {
 
-    console.log('�?串口COM3已打开');
+    console.log('✅ 串口COM3已打开');
 
 });
 
@@ -96,7 +115,7 @@ serialPort.on('open', () => {
 
 serialPort.on('error', (err) => {
 
-    console.log('�?串口错误:', err.message);
+    console.log('❌ 串口错误:', err.message);
 
 });
 
@@ -106,11 +125,11 @@ serialPort.on('error', (err) => {
 
 app.post('/led', (req, res) => {
 
-    const state = req.body.state;  // 0=�? 1=开
+    const state = req.body.state;  // 0=关, 1=开
 
     // 协议：单字节指令
 
-    // 0x01 = 开�? 0x00 = 关灯
+    // 0x01 = 开灯, 0x00 = 关灯
 
     const cmd = Buffer.from([state]);
 
@@ -118,13 +137,13 @@ app.post('/led', (req, res) => {
 
         if (err) {
 
-            console.log('�?串口写入失败:', err.message);
+            console.log('❌ 串口写入失败:', err.message);
 
             res.status(500).send('控制失败');
 
         } else {
 
-            console.log(`💡 发送指�? ${state === 1 ? '开�? : '关灯'}`);
+            console.log(`💡 发送指令: ${state === 1 ? '开灯' : '关灯'}`);
 
             res.send('成功');
 
@@ -199,7 +218,7 @@ app.listen(PORT, () => {
 
     <h1>💡 LED智能控制</h1>
 
-    <button class="btn btn-on" onclick="sendCmd(1)">🔛 开�?/button>
+    <button class="btn btn-on" onclick="sendCmd(1)">🔛 开灯</button>
 
     <button class="btn btn-off" onclick="sendCmd(0)">🔛 关灯</button>
 
@@ -227,13 +246,13 @@ app.listen(PORT, () => {
 
                 document.getElementById('status').innerHTML =
 
-                    state === 1 ? '�?灯已开�? : '�?灯已关闭';
+                    state === 1 ? '✅ 灯已开启' : '❌ 灯已关闭';
 
             })
 
             .catch(err => {
 
-                document.getElementById('status').innerHTML = '�?发送失�?;
+                document.getElementById('status').innerHTML = '❌ 发送失败';
 
             });
 
