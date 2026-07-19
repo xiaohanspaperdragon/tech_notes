@@ -181,12 +181,6 @@
       "commit": "dad0a4c0abdc8b3c2786277a2cbd67dc039c754c",
       "installedAt": "2026-06-03T13:32:35.851Z"
     },
-    "og-image": {
-      "source": "github:quartz-community/og-image",
-      "resolved": "https://github.com/quartz-community/og-image.git",
-      "commit": "31343c612d02c5fd22ff27a1e6035b2486be75f5",
-      "installedAt": "2026-06-03T13:32:35.899Z"
-    },
     "ox-hugo": {
       "source": "github:quartz-community/ox-hugo",
       "resolved": "https://github.com/quartz-community/ox-hugo.git",
@@ -198,17 +192,6 @@
       "resolved": "https://github.com/quartz-community/page-title.git",
       "commit": "a1c1fe0a9c6a5ce1acf6efa01d473a7d9850e2a3",
       "installedAt": "2026-06-03T13:32:36.002Z"
-    },
-    "quartz-themes": {
-      "source": {
-        "name": "quartz-themes",
-        "repo": "github:saberzero1/quartz-themes",
-        "subdir": "plugin"
-      },
-      "resolved": "https://github.com/saberzero1/quartz-themes.git",
-      "commit": "945135e8b70576753d0591e1713fe56553100b3d",
-      "subdir": "plugin",
-      "installedAt": "2026-06-11T15:50:25.576Z"
     },
     "reader-mode": {
       "source": "github:quartz-community/reader-mode",
