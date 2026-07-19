@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: zh-CN
-  baseUrl: xiaohanspaperdragon.github.io/tech_notes
+  baseUrl: www.xiaohans.tech
   ignorePatterns:
     - private
     - templates
