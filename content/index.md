@@ -14,8 +14,12 @@ description: 关于潇寒智库
 
 ## 🎓 欢迎来到潇寒智库
 
-> [!quote] 吟风而来，润物无声  
-> 以文字的温度，点燃思想的火花。
+> [!important]
+> 手机端左上角是导航栏哦~
+>
+>==本月热点：新生指南==
+ >[西南石油大学成都校区新生指南](https://www.xiaohans.tech/%E6%88%90%E9%83%BD%E6%A0%A1%E5%8C%BA%E6%96%B0%E7%94%9F%E6%8C%87%E5%8D%97/)
+
 
 ---
 
@@ -53,7 +57,4 @@ description: 关于潇寒智库
 > 📮 邮箱：xiaohans@xiaohans.xyz  
 > 📝 Blog: https://log.xiaohans.xyz  
 > 🌐 主页: https://xiaohans.xyz  
->
->
-> ![[yinfeng.webp]]  
-> 🧩 合作团队：西南石油大学吟风文学社
+> 🌐 Homepage: https://log.xiaohans.tech
