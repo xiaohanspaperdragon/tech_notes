@@ -49,12 +49,11 @@ description: 关于潇寒智库
 ## 👤 关于站长与团队
 
 > [!important] 关于我们  
-> 
-> ![[xiaohan.webp]]  
-> 
-> 👤 站长：潇寒 paper龙  
+> > 👤 站长：潇寒 paper龙  
 > 💬 QQ：1632351458  
 > 📮 邮箱：xiaohans@xiaohans.xyz  
 > 📝 Blog: https://log.xiaohans.xyz  
 > 🌐 主页: https://xiaohans.xyz  
 > 🌐 Homepage: https://log.xiaohans.tech
+> ![[xiaohan.webp]]  
+
