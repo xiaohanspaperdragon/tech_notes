@@ -13,12 +13,12 @@ description: 关于潇寒智库
 ---
 
 ## 🎓 欢迎来到潇寒智库
-
+### 本站更换域名为xiaohans.com
 > [!important]
 > 手机端左上角是导航栏哦~
 >
 >==本月热点：新生指南==
- >[西南石油大学成都校区新生指南](https://www.xiaohans.tech/%E6%88%90%E9%83%BD%E6%A0%A1%E5%8C%BA%E6%96%B0%E7%94%9F%E6%8C%87%E5%8D%97/)
+ >[西南石油大学成都校区新生指南](https://www.xiaohans.com/%E6%88%90%E9%83%BD%E6%A0%A1%E5%8C%BA%E6%96%B0%E7%94%9F%E6%8C%87%E5%8D%97/)
 
 
 ---
@@ -30,7 +30,7 @@ description: 关于潇寒智库
 > CC BY-NC-ND 4.0  
 > 未经允许禁止转载  
 > 若原作者同意转载请注明来自：  
-> 🔗 https://xiaohans.tech 潇寒の智库 或  
+> 🔗 https://xiaohans.com 潇寒の智库 或  
 > 🔗 https://log.xiaohans.xyz 潇寒的日志  
 > 📮 联系站长：xiaohans@xiaohans.xyz  
 > 🧑‍💻 站长：潇寒 paper龙  
@@ -54,6 +54,6 @@ description: 关于潇寒智库
 > 📮 邮箱：xiaohans@xiaohans.xyz  
 > 📝 Blog: https://log.xiaohans.xyz  
 > 🌐 主页: https://xiaohans.xyz  
-> 🌐 Homepage: https://log.xiaohans.tech
+> 📖 智库: https://xiaohans.com
 > ![[xiaohan.webp]]  
 
