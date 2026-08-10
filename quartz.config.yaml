@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: 潇寒智库
+  pageTitle: 潇寒の知库
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true

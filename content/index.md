@@ -1,11 +1,11 @@
 ---
-title: 关于潇寒の智库
+title: 关于潇寒の知库
 author:
   - 潇寒
   - 潇寒paper龙
 tags:
   - 关于潇寒
-  - 潇寒の智库
+  - 潇寒の知库
 created: 2024-08-12
 modified: 2025-08-05
 draft: false
@@ -15,10 +15,12 @@ description: 关于潇寒智库
 ## 🎓 欢迎来到潇寒智库
 ### 本站更换域名为xiaohans.com
 > [!important]
-> 手机端左上角是导航栏哦~
+> 手机端左上角是导航栏哦~电脑端食用效果更佳
 >
->==本月热点：新生指南==
- >[西南石油大学成都校区新生指南](https://www.xiaohans.com/%E6%88%90%E9%83%BD%E6%A0%A1%E5%8C%BA%E6%96%B0%E7%94%9F%E6%8C%87%E5%8D%97/)
+>==本月热点：成都校区新生指南==
+ >[[成都校区新生指南/index|index]]
+ >==最新的美食攻略==
+ >[[16.第十六章：美食攻略2026]]
 
 
 ---
@@ -49,7 +51,7 @@ description: 关于潇寒智库
 ## 👤 关于站长与团队
 
 > [!important] 关于我们  
-> > 👤 站长：潇寒 paper龙  
+> 👤 站长：潇寒 paper龙  
 > 💬 QQ：1632351458  
 > 📮 邮箱：xiaohans@xiaohans.xyz  
 > 📝 Blog: https://log.xiaohans.xyz  
