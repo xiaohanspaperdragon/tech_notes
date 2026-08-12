@@ -1,3 +1,26 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// 左上角站名前加圆形头像
+.page-title a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.page-title a::before {
+  content: "";
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-image: url("/static/icon.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 0 2px var(--lightgray);
+}
+
+.page-title a:hover::before {
+  box-shadow: 0 0 0 2px var(--secondary);
+}
