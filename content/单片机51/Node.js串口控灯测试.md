@@ -5,9 +5,8 @@ author:
   - 潇寒paper龙
 tags:
   - 单片机
-  - 51
   - 虚拟串口
-created: 2026-7-05
+created: 2026-7-04
 draft: false
 ---
 

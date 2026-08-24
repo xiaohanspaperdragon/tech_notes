@@ -5,9 +5,7 @@ author:
   - 潇寒paper龙
 tags:
   - 单片机
-  - 51
   - 虚拟串口
-  - node.js
 created: 2026-7-05
 draft: false
 ---
