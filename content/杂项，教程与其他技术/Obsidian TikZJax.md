@@ -1,4 +1,3 @@
-<img width=275 align="right" src="./imgs/screenshot.png">
 
 # Obsidian TikZJax
 
